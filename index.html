@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i0.wp.com/calculadora-digital.com.br/wp-content/uploads/2022/06/cropped-257791.png?fit=512%2C512&ssl=1">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn" onclick="deleteLast()">DEL</button>
+            <button class="btn" onclick="appendOperator('/')">/</button>
+            <button class="btn" onclick="appendOperator('×')">×</button>
+            <button class="btn" onclick="appendNumber(7)">7</button>
+            <button class="btn" onclick="appendNumber(8)">8</button>
+            <button class="btn" onclick="appendNumber(9)">9</button>
+            <button class="btn" onclick="appendOperator('-')">-</button>
+            <button class="btn" onclick="appendNumber(4)">4</button>
+            <button class="btn" onclick="appendNumber(5)">5</button>
+            <button class="btn" onclick="appendNumber(6)">6</button>
+            <button class="btn" onclick="appendOperator('+')">+</button>
+            <button class="btn" onclick="appendNumber(1)">1</button>
+            <button class="btn" onclick="appendNumber(2)">2</button>
+            <button class="btn" onclick="appendNumber(3)">3</button>
+            <button class="btn equals" onclick="calculate()">=</button>
+            <button class="btn zero" onclick="appendNumber(0)">0</button>
+            <button class="btn" onclick="appendNumber('.')">.</button>
+
+           
+            <button class="btn" onclick="calculateSin()">sin</button>
+            <button class="btn" onclick="calculateCos()">cos</button>
+            <button class="btn" onclick="calculateTan()">tan</button>
+            <button class="btn" onclick="calculateLog()">log</button>
+            <button class="btn" onclick="calculateExp()">exp</button>
+            <button class="btn" onclick="calculateSqrt()">√</button>
+            <button class="btn" onclick="square()">x²</button>
+            <button class="btn" onclick="calculatePi()">π</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
